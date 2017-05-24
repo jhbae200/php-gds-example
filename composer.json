@@ -1,0 +1,23 @@
+{
+  "require": {
+    "silex/silex": "~2.1",
+    "twig/twig": "~1.28|~2.0",
+    "symfony/twig-bridge": "~3.2.8",
+    "tomwalder/php-gds": "~v3.0.1"
+  },
+  "require-dev": {
+    "google/appengine-php-sdk": "~1.9",
+    "symfony/yaml": "~3.2"
+  },
+  "authors": [
+    {
+      "name": "jinhwan",
+      "email": "jhbae200@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jhbae\\GdsExample\\": ["src"]
+    }
+  }
+}

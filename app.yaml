@@ -1,0 +1,20 @@
+runtime: php55
+#application: [your-project-id]
+api_version: 1
+threadsafe: yes
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- ^\.idea$
+- ^tools$
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+- url: .*
+  script: web/index.php
